@@ -9,7 +9,9 @@ photos:
 >"E" 代表 "effective"，即【高效】。EJS 是一套简单的模板语言，帮你利用普通的 JavaScript 代码生成 HTML 页面。EJS 没有如何组织内容的教条；也没有再造一套迭代和控制流语法；有的只是普通的 JavaScript 代码而已。
 
 ## 环境配置
-因为Hexo自带的有`hexo-renderer-ejs`故无需配置环境。
+因为Hexo自带的有`hexo-renderer-ejs`
+
+故无需配置环境。
 
 若在其他地方使用需要在npm下配置
 ```

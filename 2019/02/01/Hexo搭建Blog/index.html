@@ -12,7 +12,7 @@
 <meta property="og:site_name" content="AngUOI | 分享我想分享的">
 <meta property="og:description" content="Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。  所需环境 Node.js Git  安装HexoWindows1$ npm install -g hexo-cli 常用命令行hexo官方文档123$ hexo init &amp;lt;folder&amp;gt; //新建一个hexo项目$ cd &amp;lt;fo">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-01T12:14:09.062Z">
+<meta property="og:updated_time" content="2019-02-02T02:19:31.883Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo搭建Blog">
 <meta name="twitter:description" content="Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。  所需环境 Node.js Git  安装HexoWindows1$ npm install -g hexo-cli 常用命令行hexo官方文档123$ hexo init &amp;lt;folder&amp;gt; //新建一个hexo项目$ cd &amp;lt;fo">
@@ -72,9 +72,9 @@
 <h2 id="常用命令行"><a href="#常用命令行" class="headerlink" title="常用命令行"></a>常用命令行</h2><p><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo官方文档</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt; //新建一个hexo项目</span><br><span class="line">$ cd &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt; //新建一篇文章</span><br></pre></td></tr></table></figure>
 <p>layout: 可以在命令中指定文章的布局（layout），默认为 post，可以通过修改 _config.yml 中的 default_layout 参数来指定默认布局。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server //在本地部署预览</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server </span><br><span class="line">或</span><br><span class="line">$ hexo s     //在本地部署预览</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate //使用 Hexo 生成静态文件快速而且简单。</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo deploy //清理后一键部署</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo deploy //清理后一键部署</span><br><span class="line">`hexo d == hexo deploy`</span><br></pre></td></tr></table></figure>
 <h2 id="目录介绍"><a href="#目录介绍" class="headerlink" title="目录介绍"></a>目录介绍</h2><p>新建完成后，指定文件夹的目录如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
 <h3 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h3><p>网站的 配置 信息，您可以在此配置大部分的参数。</p>
@@ -85,6 +85,8 @@
 
   </article>
   <footer class="f-cf">
+    
+      <a href="/2019/02/02/EJS入门/" class="link f-fl">⟵EJS入门</a>
     
     
       <a href="/2019/02/01/HelloWorld/" class="link f-fr">Hello World⟶</a>

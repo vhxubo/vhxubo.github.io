@@ -30,7 +30,9 @@ $ hexo new [layout] <title> //新建一篇文章
 layout: 可以在命令中指定文章的布局（layout），默认为 post，可以通过修改 _config.yml 中的 default_layout 参数来指定默认布局。
 
 ```
-$ hexo server //在本地部署预览
+$ hexo server 
+或
+$ hexo s     //在本地部署预览
 ```
 
 ```
@@ -39,6 +41,7 @@ $ hexo generate //使用 Hexo 生成静态文件快速而且简单。
 
 ```
 $ hexo clean && hexo deploy //清理后一键部署
+`hexo d == hexo deploy`     
 ```
 
 ## 目录介绍

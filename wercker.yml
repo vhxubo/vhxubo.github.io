@@ -8,7 +8,8 @@ deploy:
   steps:
     - install-packages:
         packages: git ssh-client
-    - lukevivier/gh-pages@0.2.1:
-        token: $GIT_TOKEN
-        domain: anguoi.github.io
-        basedir: public
+    - sf-zhou/gh-pages@0.2.6:
+            token: $GIT_TOKEN
+            domain: anguoi.github.io
+            branch: master
+            basedir: public

@@ -12,3 +12,4 @@ deploy:
         token: $GIT_TOKEN
         domain: anguoi.github.io
         basedir: public
+        

@@ -1,9 +1,9 @@
-baseURL = "https://anguoi.github.io/"
+baseURL = "https://blog.zxbzn.com/"
 languageCode = "zh-CN"
 title = "AngUOI"
 theme = "maupassant"
 # 文章摘要长度默认70
-summaryLength = 140
+summaryLength = 70
 hasCJKLanguage = true
 [author]
   name = "Guimi"

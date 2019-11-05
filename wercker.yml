@@ -10,6 +10,6 @@ deploy:
         packages: git ssh-client
     - nztomas/gh-pages@0.2.4:
         token: $GIT_TOKEN
-        domain: anguoi.github.io
+        domain: blog.zxbzn.com
         branch: master
         basedir: public

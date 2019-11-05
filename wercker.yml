@@ -13,3 +13,4 @@ deploy:
         domain: blog.zxbzn.com
         branch: master
         basedir: public
+        

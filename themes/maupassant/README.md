@@ -230,15 +230,11 @@ summaryLength = 140
   busuanzi = true
 ```
 
-#### 禁止分类的名称转为小写
+#### 关于分类的名称转为小写的问题
 
-我们在写文章的时候，会给文章进行分类，比如Golang，但是默认情况下，Hugo会把这个Golang转为小写，
-这就我们一直用原始字符的造成困扰，为了解决这个问题，Hugo提供了`preserveTaxonomyNames`配置，把它设置为`true`就可以了保持原来分类的名字了。
-
-```toml
-## 保持分类的原始名字（false会做转小写处理）
-preserveTaxonomyNames = true
-```
+`Hugo 0.55` 版本之前, 会有分类转成小写的问题，Hugo提供了`preserveTaxonomyNames`配置，把它设置为`true`就可以了保持原来分类的名字了。
+在 `Hugo 0.55` 这个版本，[hugo 移除了 preserveTaxonomyNames 配置](https://gohugo.io/content-management/taxonomies/#example-removing-default-taxonomies)，
+模板已经默认获取 tag 和 categories 的原始字符用来展示, 大小写的问题已经优雅的解决了。
 
 #### 禁止URL路径小写
 

@@ -2,22 +2,23 @@ baseURL = "https://anguoi.github.io/"
 languageCode = "zh-CN"
 title = "AngUOI"
 theme = "maupassant"
+# 文章摘要长度默认70
+summaryLength = 140
+hasCJKLanguage = true
 [author]
   name = "Guimi"
 
 [params]
   author = "Guimi"
-  subtitle = ""
-  keywords = ""
-  description = ""
+  subtitle = "一个爱折腾，对编程充满好奇的渣渣"
+  keywords = "AngUOI,Guimi"
+  description = "记录一些无趣、有用的事情"
+
+  [params.cc]
+    name = "知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议"
+    link = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
 
   [menu]
-
-  [[menu.main]]
-    identifier = "books"
-    name = "新书"
-    url = "/books/"
-    weight = 2
 
   [[menu.main]]
     identifier = "archives"

@@ -1,7 +1,6 @@
 ---
 title: "笔记工具迁移之旅"
 date: 2019-11-05T16:28:42+08:00
-draft: true
 type: post
 tags: ["笔记","工具"]
 categories:

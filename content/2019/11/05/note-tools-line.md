@@ -6,7 +6,7 @@ tags: ["工具"]
 categories:
   - "见闻与感悟"
 ---
-> 目前使用：电脑 Typora，手机 纯纯写作，博客 Hugo WordPress，网页 Notion
+### 目前使用电脑 Typora，手机 纯纯写作，博客 Hugo WordPress，网页 Notion
 
 最开始的时候，在本地使用 Typora 记录笔记，将文章分类后推到 Github 仓库。这种方法虽然对文章进行了网络备份，但是无法搜索和索引，感觉使用起来不方便。
 

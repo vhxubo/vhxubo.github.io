@@ -150,7 +150,9 @@
                                 {{ .ReadingTime }} 分钟。</div>
                             <div class="post-content">
                                 {{ .Content }}
+                                {{ if ne .Lastmod .Date}}
                                 <span style="color: #999999;">文章已于 {{ .Lastmod.Format "2006-01-02" }} 修改</span>
+                                {{ end }}
                             </div>
                             
 

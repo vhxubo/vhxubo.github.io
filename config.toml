@@ -24,6 +24,12 @@ enableEmoji = true
   [menu]
 
   [[menu.main]]
+    identifier = "categories"
+    name = "分类"
+    url = "/categories/"
+    weight = 2
+
+  [[menu.main]]
     identifier = "archives"
     name = "归档"
     url = "/archives/"

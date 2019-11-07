@@ -1,7 +1,7 @@
 ---
 title: "Hugo + GithubPage 自定义域名并支持 HTTPS"
 date: 2019-11-05T21:16:48+08:00
-update: 2019-11-06T23:17:40+08:00
+lastmod: 2019-11-06T23:17:40+08:00
 type: post
 tags: ["GithubPage","Custom domain","Hugo"]
 categories:

@@ -14,6 +14,7 @@ enableEmoji = true
   subtitle = "一个爱折腾，对编程充满好奇的渣渣"
   keywords = "AngUOI,Guimi"
   description = "记录一些无趣、有用的事情"
+  busuanzi = true
 
   customJS = ['duration.js']
 
@@ -21,7 +22,14 @@ enableEmoji = true
     name = "知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议"
     link = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
 
-  [menu]
+  [params.utteranc]
+    enable = true
+    repo = "anguoi/utterances-comment"
+    issueTerm = "pathname"
+    theme = "github-light"
+    label = "blog"
+
+[menu]
 
   [[menu.main]]
     identifier = "categories"

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>工具 on AngUOI</title>
+    <link>https://blog.zxbzn.com/tags/%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 工具 on AngUOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 05 Nov 2019 16:28:42 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.zxbzn.com/tags/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>笔记/写作工具迁移之旅</title>
+      <link>https://blog.zxbzn.com/2019/11/05/note-tools-line/</link>
+      <pubDate>Tue, 05 Nov 2019 16:28:42 +0800</pubDate>
+      
+      <guid>https://blog.zxbzn.com/2019/11/05/note-tools-line/</guid>
+      <description>目前使用电脑 Typora，手机 纯纯写作，博客 Hugo WordPress，网页 Notion 最开始的时候，在本地使用 Typora 记录笔记，将文章分类后推到 Github 仓库。这种方法</description>
+    </item>
+    
+  </channel>
+</rss>

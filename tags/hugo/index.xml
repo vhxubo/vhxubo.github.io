@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on AngUOI</title>
+    <link>https://blog.zxbzn.com/tags/hugo/</link>
+    <description>Recent content in Hugo on AngUOI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 05 Nov 2019 21:16:48 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.zxbzn.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo &#43; GithubPage 自定义域名并支持 HTTPS</title>
+      <link>https://blog.zxbzn.com/2019/11/05/githubpage-domain-setting/</link>
+      <pubDate>Tue, 05 Nov 2019 21:16:48 +0800</pubDate>
+      
+      <guid>https://blog.zxbzn.com/2019/11/05/githubpage-domain-setting/</guid>
+      <description>因为 WordPress 的 maupassant 主题没有 Hugo 上的好看，而且基本不用 WordPress，以及学生机访问较慢，所以决定将 blog.zxbzn.com 设置为 anguoi.github.io 的 Custom domain，白嫖 Github。 根</description>
+    </item>
+    
+  </channel>
+</rss>

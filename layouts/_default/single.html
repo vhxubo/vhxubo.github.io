@@ -146,11 +146,13 @@
                                 </div>
                             </div>
                             {{ end }}
+                            {{ if .Site.Params.hint.readInfo }}
                             <div style="margin-top: 18px;color: #555555;">本文约 {{ .Content | countwords }} 字，阅读全文约需
                                 {{ .ReadingTime }} 分钟。</div>
+                            {{ end }}
                             <div class="post-content">
                                 {{ .Content }}
-                                {{ if ne .Lastmod .Date}}
+                                {{ if (and (ne .Lastmod .Date) .Site.Params.hint.lastmod)}}
                                 <span style="color: #999999;">文章已于 {{ .Lastmod.Format "2006-01-02" }} 修改</span>
                                 {{ end }}
                             </div>

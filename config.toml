@@ -27,20 +27,6 @@ enableEmoji = true
     issueTerm = "pathname"
     theme = "github-light"
     label = "blog"
-
-  [params.duration]
-    timeStamp = "1415721600"
-    leftImage = "http://q.qlogo.cn/headimg_dl?dst_uin=2711402167&spec=640&img_type=jpg"
-    rightImage = "http://q.qlogo.cn/headimg_dl?dst_uin=925122985&spec=640&img_type=jpg"
-  
-  [params.hint]
-    readInfo = true
-    lastmod = true
-
-[markup]
-  [markup.highlight]
-    lineNos = true
-    style = "github"
     
 [menu]
 

@@ -6,7 +6,6 @@ type: post
 tags: ["GithubPage","Custom domain","Hugo"]
 categories:
   - "开发者手册"
-toc: true
 ---
 因为 WordPress 的 maupassant 主题没有 Hugo 上的好看，而且基本不用 WordPress，以及学生机访问较慢，所以决定将 blog.zxbzn.com 设置为 anguoi.github.io 的 Custom domain，白嫖 Github。
 

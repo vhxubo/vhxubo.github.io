@@ -3,31 +3,27 @@
 <head>
 
     <meta charset="utf-8">
-    <meta name="generator" content="Hugo 0.69.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Hugo &#43; GithubPage 自定义域名并支持 HTTPS | AngUOI</title>
-    <meta property="og:title" content="Hugo &#43; GithubPage 自定义域名并支持 HTTPS - AngUOI">
+    <title>Hugo &#43; GithubPage 自定义域名并支持 HTTPS | Vhxubo&#39;s blog</title>
+    <meta property="og:title" content="Hugo &#43; GithubPage 自定义域名并支持 HTTPS - Vhxubo&#39;s blog">
     <meta property="og:type" content="article">
         
-    <meta property="article:published_time" content="2019-11-05T21:16:48&#43;08:00">
+    <meta property="article:published_time" content='2019-11-05T21:16:48&#43;08:00'>
         
         
-    <meta property="article:modified_time" content="2019-11-06T23:17:40&#43;08:00">
+    <meta property="article:modified_time" content='2019-11-06T23:17:40&#43;08:00'>
         
-    <meta name="Keywords" content="AngUOI,Guimi">
+    <meta name="Keywords" content="Vhxubo,AngUOI,Guimi,博客">
     <meta name="description" content="Hugo &#43; GithubPage 自定义域名并支持 HTTPS">
         
-    <meta name="author" content="Guimi">
-    <meta property="og:url" content="https://blog.zxbzn.com/2019/11/05/githubpage-domain-setting/">
+    <meta name="author" content="Vhxubo">
+    <meta property="og:url" content="https://blog.vhxubo.com/2019/11/05/githubpage-domain-setting/">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="/css/normalize.css">
-    
-        <link rel="stylesheet" href="/css/prism.css">
-    
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     
@@ -44,21 +40,21 @@
         <div class="col-group">
             <div class="site-name ">
                 
-                    <a id="logo" href="https://blog.zxbzn.com/">
-                        AngUOI
+                    <a id="logo" href="https://blog.vhxubo.com">
+                        Vhxubo&#39;s blog
                     </a>
                 
-                <p class="description">一个爱折腾，对编程充满好奇的渣渣</p>
+                <p class="description">专注摸鱼、踩坑，热衷于学习并开发各种插件</p>
             </div>
             <div>
                 <nav id="nav-menu" class="clearfix">
-                    <a class="current" href="https://blog.zxbzn.com/">首页</a>
+                    <a class="current" href="https://blog.vhxubo.com">首页</a>
                     
-                    <a  href="https://blog.zxbzn.com/categories/" title="分类">分类</a>
+                    <a  href="https://blog.vhxubo.com/categories/" title="分类">分类</a>
                     
-                    <a  href="https://blog.zxbzn.com/archives/" title="归档">归档</a>
+                    <a  href="https://blog.vhxubo.com/archives/" title="归档">归档</a>
                     
-                    <a  href="https://blog.zxbzn.com/about/" title="关于">关于</a>
+                    <a  href="https://blog.vhxubo.com/about/" title="关于">关于</a>
                     
                 </nav>
             </div>
@@ -66,160 +62,143 @@
     </div>
 </header>
 
-
     <div id="body">
-        
-        <div id="virtual_toc_list" style="display: none">
-            <nav id="TableOfContents">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    <style type="text/css">
+    .post-toc {
+        position: fixed;
+        width: 200px;
+        margin-left: -210px;
+        padding: 5px 10px;
+        font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+        font-size: 12px;
+        border: 1px solid rgba(0, 0, 0, .07);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.98);
+        background-clip: padding-box;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        word-wrap: break-word;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        z-index: 999;
+        cursor: pointer;
+        max-height: 70%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .post-toc .post-toc-title {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .post-toc .post-toc-content {
+        font-size: 15px;
+    }
+
+    .post-toc .post-toc-content>nav>ul {
+        margin: 10px 0;
+    }
+
+    .post-toc .post-toc-content ul {
+        padding-left: 20px;
+        list-style: square;
+        margin: 0.5em;
+        line-height: 1.8em;
+    }
+
+    .post-toc .post-toc-content ul ul {
+        padding-left: 15px;
+        display: none;
+    }
+
+    @media print,
+    screen and (max-width:1057px) {
+        .post-toc {
+            display: none;
+        }
+    }
+</style>
+<div class="post-toc" style="position: absolute; top: 188px;">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+        <nav id="TableOfContents">
   <ul>
     <li><a href="#新增-cname-记录">新增 CNAME 记录</a></li>
     <li><a href="#custom-domain-设置">Custom domain 设置</a></li>
     <li><a href="#hugo-配置">Hugo 配置</a></li>
   </ul>
 </nav>
-        </div>
-        <div id="float_toc_div" style="margin: 10px;border: 1px solid gray;z-index:99999;display: none;">
-            <header
-                style="background-color: #f3f3f3;color: black;border-bottom: 1px solid gray;padding: 10px 10px 10px 10px;">
-                <strong id="toc_btn_open" style="color: black;font-size: large;">目录</strong>
-                <strong id="toc_btn_close" style="color: black;font-size: large;float: right">╳</strong>
-            </header>
-            <div id="toc_list" style="background-color: #f3f3f3;color: black;padding: 10px;">
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var postToc = $(".post-toc");
+        if (postToc.length) {
+            var leftPos = $("#main").offset().left;
+            if(leftPos<220){
+                postToc.css({"width":leftPos-10,"margin-left":(0-leftPos)})
+            }
 
+            var t = postToc.offset().top - 20,
+                a = {
+                    start: {
+                        position: "absolute",
+                        top: t
+                    },
+                    process: {
+                        position: "fixed",
+                        top: 20
+                    },
+                };
+            $(window).scroll(function () {
+                var e = $(window).scrollTop();
+                e < t ? postToc.css(a.start) : postToc.css(a.process)
+            })
+        }
+    })
+</script>
+    <article class="post">
+        <header>
+            <h1 class="post-title">Hugo &#43; GithubPage 自定义域名并支持 HTTPS</h1>
+        </header>
+        <date class="post-meta meta-date">
+            2019年11月5日
+        </date>
+        
+        <div class="post-meta">
+            <span>|</span>
+            
+            <span class="meta-category"><a href='https://blog.vhxubo.com/categories/%E5%BC%80%E5%8F%91%E8%80%85%E6%89%8B%E5%86%8C'>开发者手册</a></span>
+            
+        </div>
+        
+        
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
+                    阅读</span></span>
+        </div>
+        
+        
+        <div class="clear" style="display: none">
+            <div class="toc-article">
+                <div class="toc-title">文章目录</div>
             </div>
         </div>
-        <style type="text/css">
-            #float_toc_div {
-                position: fixed;
-                display: none;
-                 
-                height: auto;
-                font-size: 13px;
-            }
-
-            #toc_list a:hover,
-            #toc_list a:active {
-                color: #ba3925;
-            }
-        </style>
-        <script>
-            window.onload = function () {
-                let tocNavElem = document.getElementById("TableOfContents");
-                let floatTocDivElem = document.getElementById("float_toc_div");
-                let tocListElem = floatTocDivElem.getElementsByTagName('div')[0];
-                let colGroupElem = document.getElementById("body").getElementsByClassName("col-group")[0]
-                let floatTocWidth = (document.body.clientWidth - colGroupElem.offsetWidth) / 2 - 16;
-                var useFloatToc = false;
-
-                if (floatTocWidth >= 100) {
-                    useFloatToc = true;
-                    document.getElementById("toc_list").appendChild(tocNavElem);
-                    floatTocDivElem.style.display = 'block';
-                    floatTocDivElem.style.width = floatTocWidth + 'px';
-                    top();
-                    floatTocDivElem.style.left = '0px';
-
-                    function top() {
-                        if (document.getElementsByClassName('container')[0].offsetWidth <= 720) {
-                            floatTocDivElem.style.top = '0px';
-                        } else {
-                            floatTocDivElem.style.top = window.innerHeight / 9 + 'px';
-                        }
-                    }
-
-                    function ishide() {
-                        if (document.getElementsByClassName('container')[0].offsetWidth <= 720) {
-                            floatTocDivElem.style.top = '0px';
-                        } else {
-                            floatTocDivElem.style.display = 'block';
-                        }
-                    }
-
-                    window.onscroll = function () {
-                        ishide();
-                        if ((document.documentElement.scrollTop != 0) && (floatTocDivElem.style.display ==
-                                'block')) {
-                            top();
-                        }
-                    };
-
-                    window.onresize = function () {
-                        ishide();
-                    }
-
-                    document.getElementById("toc_btn_open").addEventListener('click', function () {
-                        switch (tocListElem.style.display) {
-                            case "none":
-                                document.getElementById("toc_btn_close").style.display = "";
-                                tocListElem.style.display = "";
-                                floatTocDivElem.getElementsByTagName("header")[0].style.borderBottom =
-                                    "1px solid gray";
-                                break;
-                            default:
-                                break;
-                        }
-                    }, false);
-
-                    document.getElementById("toc_btn_close").addEventListener('click', function () {
-                        switch (tocListElem.style.display) {
-                            case "":
-                                document.getElementById("toc_btn_close").style.display = "none";
-                                tocListElem.style.display = "none";
-                                floatTocDivElem.getElementsByTagName("header")[0].style.borderBottom = "";
-                                break;
-                            default:
-                                break;
-                        }
-                    }, false);
-                } else {
-                    let fixedTocElem = document.getElementsByClassName("toc-article")[0];
-                    fixedTocElem.appendChild(tocNavElem);
-                    fixedTocElem.parentElement.style.display = "";
-                }
-                document.getElementById("virtual_toc_list").remove();
-            };
-        </script>
-
-        <div class="container">
-            <div class="col-group">
-
-                <div class="col-8" id="main">
-                    <div class="res-cons">
-                        <article class="post">
-                            <header>
-                                <h1 class="post-title">Hugo &#43; GithubPage 自定义域名并支持 HTTPS</h1>
-                            </header>
-                            <date class="post-meta meta-date">
-                                2019年11月5日
-                            </date>
-                            
-                            <div class="post-meta">
-                                <span>|</span>
-                                
-                                <span class="meta-category"><a
-                                        href="https://blog.zxbzn.com/categories/%E5%BC%80%E5%8F%91%E8%80%85%E6%89%8B%E5%86%8C">开发者手册</a></span>
-                                
-                            </div>
-                            
-                            
-                            <div class="post-meta">
-                                <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span>
-                                        阅读</span></span>
-                            </div>
-                            
-                            
-                            <div class="clear" style="display: none">
-                                <div class="toc-article">
-                                    <div class="toc-title">文章目录</div>
-                                </div>
-                            </div>
-                            
-                            
-                            <div style="margin-top: 18px;color: #555555;">本文约 541 字，阅读全文约需
-                                2 分钟。</div>
-                            
-                            <div class="post-content">
-                                <p>因为 WordPress 的 maupassant 主题没有 Hugo 上的好看，而且基本不用 WordPress，以及学生机访问较慢，所以决定将 blog.zxbzn.com 设置为 anguoi.github.io 的 Custom domain，白嫖 Github。</p>
+        
+        <div class="post-content">
+            <p>因为 WordPress 的 maupassant 主题没有 Hugo 上的好看，而且基本不用 WordPress，以及学生机访问较慢，所以决定将 blog.zxbzn.com 设置为 anguoi.github.io 的 Custom domain，白嫖 Github。</p>
 <p>根据网上已有文章，新增 A 记录设置 Custom domain 后，发现 GithubPage 有如下提示:</p>
 <blockquote>
 <p>Your site&rsquo;s DNS settings are using a custom subdomain, blog.zxbzn.com, that&rsquo;s set up as an A record. We recommend you change this to a CNAME record pointing at [YOUR USERNAME].github.io. For more information, see <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/">https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/</a>.</p>
@@ -246,24 +225,37 @@
 <p><img src="githubpage-setting.png" alt="githubpage-setting"></p>
 <h2 id="hugo-配置">Hugo 配置</h2>
 <p><code>config.toml</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#75715e"># 注意换成你的自定义域名</span>
-<span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;https://blog.zxbzn.com/&#34;</span>
-</code></pre></div><p><code>wercker.yml</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml"><span style="color:#75715e"># 注意换成你的自定义域名</span>
-- <span style="color:#66d9ef">nztomas/gh-pages@0.2.4</span>:
-    <span style="color:#66d9ef">domain</span>: blog.zxbzn.com
-</code></pre></div>
-                                
-                                <span style="color: #999999;">文章已于 2019-11-06 修改</span>
-                                
-                            </div>
-                            
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#998;font-style:italic"># 注意换成你的自定义域名</span>
+baseURL = <span style="color:#d14">&#34;https://blog.zxbzn.com/&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><code>wercker.yml</code></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml"><span style="color:#998;font-style:italic"># 注意换成你的自定义域名</span><span style="color:#bbb">
+</span><span style="color:#bbb"></span>- <span style="color:#000;font-weight:bold">nztomas/gh-pages@0.2.4</span>:<span style="color:#bbb">
+</span><span style="color:#bbb">    </span><span style="color:#000;font-weight:bold">domain</span>:<span style="color:#bbb"> </span>blog.zxbzn.com<span style="color:#bbb">
+</span></code></pre></td></tr></table>
+</div>
+</div>
+        </div>
 
-                            
+        
 <div class="post-archive">
     <ul class="post-copyright">
-        <li><strong>原文作者：</strong><a rel="author" href="https://blog.zxbzn.com/">Guimi</a></li>
-        <li style="word-break:break-all"><strong>原文链接：</strong><a href="https://blog.zxbzn.com/2019/11/05/githubpage-domain-setting/">https://blog.zxbzn.com/2019/11/05/githubpage-domain-setting/</a></li>
+        <li><strong>原文作者：</strong><a rel="author" href="https://blog.vhxubo.com">Vhxubo</a></li>
+        <li style="word-break:break-all"><strong>原文链接：</strong><a href="https://blog.vhxubo.com/2019/11/05/githubpage-domain-setting/">https://blog.vhxubo.com/2019/11/05/githubpage-domain-setting/</a></li>
         <li><strong>版权声明：</strong>本作品采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>进行许可，非商业转载请注明出处（作者，原文链接），商业转载请联系作者获得授权。</li>
     </ul>
 </div>
@@ -271,7 +263,7 @@
 
 
 
-                            
+        
 
 <div class="post-archive">
     <h2>See Also</h2>
@@ -279,36 +271,36 @@
         
         <li><a href="/2019/11/05/note-tools-line/">笔记/写作工具迁移之旅</a></li>
         
-        <li><a href="/about/">关于</a></li>
-        
         <li><a href="/archives/">归档</a></li>
+        
+        <li><a href="/about/">关于</a></li>
         
     </ul>
 </div>
 
 
-                            <div class="post-meta meta-tags">
-                                
-                                <ul class="clearfix">
-                                    
-                                    <li><a href="https://blog.zxbzn.com/tags/githubpage">GithubPage</a></li>
-                                    
-                                    <li><a href="https://blog.zxbzn.com/tags/custom-domain">Custom domain</a></li>
-                                    
-                                    <li><a href="https://blog.zxbzn.com/tags/hugo">Hugo</a></li>
-                                    
-                                </ul>
-                                
-                            </div>
-                        </article>
-                        
+        <div class="post-meta meta-tags">
+            
+            <ul class="clearfix">
+                
+                <li><a href='https://blog.vhxubo.com/tags/githubpage'>GithubPage</a></li>
+                
+                <li><a href='https://blog.vhxubo.com/tags/custom-domain'>Custom domain</a></li>
+                
+                <li><a href='https://blog.vhxubo.com/tags/hugo'>Hugo</a></li>
+                
+            </ul>
+            
+        </div>
+    </article>
+    
     
 
     
     
     <div class="post bg-white">
       <script src="https://utteranc.es/client.js"
-            repo= "anguoi/utterances-comment"
+            repo= "vhxubo/utterances-comment"
             issue-term="pathname"
             label="blog"
             theme="github-light"
@@ -317,8 +309,10 @@
       </script>
     </div>
     
-                    </div>
+</div>
+
                 </div>
+
                 <div id="secondary">
     <section style="margin-bottom:18px;">
         <div style="text-align: center;">
@@ -373,10 +367,10 @@
 </div>
     </section>
     <section class="widget">
-        <form id="search" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+        <form id="search" action='https://blog.vhxubo.com/search/' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
       
       <input type="text" name="q" maxlength="20" placeholder="Search">
-      <input type="hidden" name="sitesearch" value="https://blog.zxbzn.com/">
+      <input type="hidden" name="sitesearch" value="https://blog.vhxubo.com">
       <button type="submit" class="submit icon-search"></button>
 </form>
     </section>
@@ -385,15 +379,11 @@
 <ul class="widget-list">
     
     <li>
-        <a href="https://blog.zxbzn.com/test/" title="Test">Test</a>
+        <a href="https://blog.vhxubo.com/2019/11/05/githubpage-domain-setting/" title="Hugo &#43; GithubPage 自定义域名并支持 HTTPS">Hugo &#43; GithubPage 自定义域名并支持 HTTPS</a>
     </li>
     
     <li>
-        <a href="https://blog.zxbzn.com/2019/11/05/githubpage-domain-setting/" title="Hugo &#43; GithubPage 自定义域名并支持 HTTPS">Hugo &#43; GithubPage 自定义域名并支持 HTTPS</a>
-    </li>
-    
-    <li>
-        <a href="https://blog.zxbzn.com/2019/11/05/note-tools-line/" title="笔记/写作工具迁移之旅">笔记/写作工具迁移之旅</a>
+        <a href="https://blog.vhxubo.com/2019/11/05/note-tools-line/" title="笔记/写作工具迁移之旅">笔记/写作工具迁移之旅</a>
     </li>
     
 </ul>
@@ -405,9 +395,9 @@
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
-    <li><a href="https://blog.zxbzn.com/categories/%E5%BC%80%E5%8F%91%E8%80%85%E6%89%8B%E5%86%8C/">开发者手册 (1)</a></li>
+    <li><a href="https://blog.vhxubo.com/categories/%E5%BC%80%E5%8F%91%E8%80%85%E6%89%8B%E5%86%8C/">开发者手册 (1)</a></li>
     
-    <li><a href="https://blog.zxbzn.com/categories/%E8%A7%81%E9%97%BB%E4%B8%8E%E6%84%9F%E6%82%9F/">见闻与感悟 (1)</a></li>
+    <li><a href="https://blog.vhxubo.com/categories/%E8%A7%81%E9%97%BB%E4%B8%8E%E6%84%9F%E6%82%9F/">见闻与感悟 (1)</a></li>
     
 </ul>
     </section>
@@ -416,13 +406,13 @@
         <h3 class="widget-title">标签</h3>
 <div class="tagcloud">
     
-    <a href="https://blog.zxbzn.com/tags/custom-domain/">Custom domain</a>
+    <a href="https://blog.vhxubo.com/tags/custom-domain/">Custom domain</a>
     
-    <a href="https://blog.zxbzn.com/tags/githubpage/">GithubPage</a>
+    <a href="https://blog.vhxubo.com/tags/githubpage/">GithubPage</a>
     
-    <a href="https://blog.zxbzn.com/tags/hugo/">Hugo</a>
+    <a href="https://blog.vhxubo.com/tags/hugo/">Hugo</a>
     
-    <a href="https://blog.zxbzn.com/tags/%E5%B7%A5%E5%85%B7/">工具</a>
+    <a href="https://blog.vhxubo.com/tags/%E5%B7%A5%E5%85%B7/">工具</a>
     
 </div>
     </section>
@@ -432,7 +422,7 @@
     <section class="widget">
         <h3 class="widget-title">其它</h3>
         <ul class="widget-list">
-            <li><a href="https://blog.zxbzn.com/index.xml">文章 RSS</a></li>
+            <li><a href="https://blog.vhxubo.com/index.xml">文章 RSS</a></li>
         </ul>
     </section>
 </div>
@@ -441,9 +431,9 @@
     </div>
     <footer id="footer">
     <div class="container">
-        &copy; 2020 <a href="https://blog.zxbzn.com/">AngUOI By Guimi</a>.
+        &copy; 2020 <a href="https://blog.vhxubo.com">Vhxubo&#39;s blog By Vhxubo</a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
-        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo" target="_blank">maupassant</a>.
+        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         
     </div>
 </footer>
@@ -451,11 +441,6 @@
 
     
     <script type="text/javascript">
-        
-        (function () {
-            $("pre code").parent().addClass("line-numbers")
-        }());
-
         window.MathJax = {
             tex2jax: {
                 inlineMath: [['$', '$']],
@@ -463,12 +448,11 @@
                 }
             };
     </script>
-    <script type="text/javascript" src="/js/prism.js" async="true"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 
 <a id="rocket" href="#top"></a>
-<script type="text/javascript" src="/js/totop.js?v=0.0.0" async=""></script>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
 
 
 

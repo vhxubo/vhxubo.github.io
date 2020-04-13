@@ -1,58 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>AngUOI</title>
-    <link>https://blog.zxbzn.com/</link>
-    <description>Recent content on AngUOI</description>
+    <title>Vhxubo&#39;s blog</title>
+    <link>https://blog.vhxubo.com/</link>
+    <description>Recent content on Vhxubo&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 13 Apr 2020 22:23:54 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 03 Nov 2019 12:50:24 +0800</lastBuildDate>
     
-	<atom:link href="https://blog.zxbzn.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.vhxubo.com/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Test</title>
-      <link>https://blog.zxbzn.com/test/</link>
-      <pubDate>Mon, 13 Apr 2020 22:23:54 +0800</pubDate>
-      
-      <guid>https://blog.zxbzn.com/test/</guid>
-      <description>Hello GitHub Action! </description>
-    </item>
     
     <item>
       <title>Hugo &#43; GithubPage 自定义域名并支持 HTTPS</title>
-      <link>https://blog.zxbzn.com/2019/11/05/githubpage-domain-setting/</link>
+      <link>https://blog.vhxubo.com/2019/11/05/githubpage-domain-setting/</link>
       <pubDate>Tue, 05 Nov 2019 21:16:48 +0800</pubDate>
       
-      <guid>https://blog.zxbzn.com/2019/11/05/githubpage-domain-setting/</guid>
-      <description>因为 WordPress 的 maupassant 主题没有 Hugo 上的好看，而且基本不用 WordPress，以及学生机访问较慢，所以决定将 blog.zxbzn.com 设置为 anguoi.github.io 的 Custom domain，白嫖 Github。 根</description>
+      <guid>https://blog.vhxubo.com/2019/11/05/githubpage-domain-setting/</guid>
+      <description>因为 WordPress 的 maupassant 主题没有 Hugo 上的好看，而且基本不用 WordPress，以及学生机访问较慢，所以决定将 blog.zxbzn.com 设置为 anguoi.github.io 的 Custom domain，白嫖 Github。 根据网上已有文章，新增 A 记录设置 Custom domain 后，发现 GithubPage 有如下提示: Your site&amp;rsquo;s DNS settings are using a custom subdomain, blog.zxbzn.com, that&amp;rsquo;s set up as an A record. We recommend you change this to a CNAME record pointing at [YOUR USERNAME].github.io. For more information, see https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/. 大概意思是: 不</description>
     </item>
     
     <item>
       <title>笔记/写作工具迁移之旅</title>
-      <link>https://blog.zxbzn.com/2019/11/05/note-tools-line/</link>
+      <link>https://blog.vhxubo.com/2019/11/05/note-tools-line/</link>
       <pubDate>Tue, 05 Nov 2019 16:28:42 +0800</pubDate>
       
-      <guid>https://blog.zxbzn.com/2019/11/05/note-tools-line/</guid>
-      <description>目前使用电脑 Typora，手机 纯纯写作，博客 Hugo WordPress，网页 Notion 最开始的时候，在本地使用 Typora 记录笔记，将文章分类后推到 Github 仓库。这种方法</description>
+      <guid>https://blog.vhxubo.com/2019/11/05/note-tools-line/</guid>
+      <description>目前使用电脑 Typora，手机 纯纯写作，博客 Hugo WordPress，网页 Notion 最开始的时候，在本地使用 Typora 记录笔记，将文章分类后推到 Github 仓库。这种方法虽然对文章进行了网络备份，但是无法搜索和索引，感觉使用起来不方便。 后来了解到 Hexo + GithubPage，不得不说，释出后的静态页面挺好，主题和</description>
     </item>
     
     <item>
       <title>关于</title>
-      <link>https://blog.zxbzn.com/about/</link>
+      <link>https://blog.vhxubo.com/about/</link>
       <pubDate>Sun, 03 Nov 2019 12:50:24 +0800</pubDate>
       
-      <guid>https://blog.zxbzn.com/about/</guid>
-      <description>一个爱折腾，对编程充满好奇的渣渣 个人博客分布在两个网站上，GithubPage anguoi.github.io 、 blog.zxbzn.com 和 WordPress(b.zxbzn.com)，前者由 Hugo</description>
+      <guid>https://blog.vhxubo.com/about/</guid>
+      <description>在这里记录我的所有碎碎念。</description>
     </item>
     
     <item>
       <title>归档</title>
-      <link>https://blog.zxbzn.com/archives/</link>
+      <link>https://blog.vhxubo.com/archives/</link>
       <pubDate>Sun, 03 Nov 2019 12:50:24 +0800</pubDate>
       
-      <guid>https://blog.zxbzn.com/archives/</guid>
+      <guid>https://blog.vhxubo.com/archives/</guid>
       <description></description>
     </item>
     

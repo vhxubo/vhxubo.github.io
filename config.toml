@@ -1,20 +1,21 @@
-baseURL = "https://blog.zxbzn.com/"
+baseURL = "https://blog.vhxubo.com"
 languageCode = "zh-CN"
-title = "AngUOI"
+title = "Vhxubo's blog"
 theme = "maupassant"
-# 文章摘要长度默认70
-summaryLength = 70
+
+summaryLength = 140
 hasCJKLanguage = true
 enableEmoji = true
 [author]
-  name = "Guimi"
+  name = "Vhxubo"
 
 [params]
-  author = "Guimi"
-  subtitle = "一个爱折腾，对编程充满好奇的渣渣"
-  keywords = "AngUOI,Guimi"
-  description = "记录一些无趣、有用的事情"
+  author = "Vhxubo"
+  subtitle = "专注摸鱼、踩坑，热衷于学习并开发各种插件"
+  keywords = "Vhxubo,AngUOI,Guimi,博客"
+  description = "记录有用的知识"
   busuanzi = true
+  localSearch = true
 
   [params.cc]
     name = "知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议"
@@ -22,7 +23,7 @@ enableEmoji = true
 
   [params.utteranc]
     enable = true
-    repo = "anguoi/utterances-comment"
+    repo = "vhxubo/utterances-comment"
     issueTerm = "pathname"
     theme = "github-light"
     label = "blog"
@@ -36,6 +37,11 @@ enableEmoji = true
     readInfo = true
     lastmod = true
 
+[markup]
+  [markup.highlight]
+    lineNos = true
+    style = "github"
+    
 [menu]
 
   [[menu.main]]

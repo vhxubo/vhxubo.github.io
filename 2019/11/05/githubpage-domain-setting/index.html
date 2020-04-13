@@ -69,106 +69,7 @@
                 <div class="col-8" id="main">
                     
 <div class="res-cons">
-    <style type="text/css">
-    .post-toc {
-        position: fixed;
-        width: 200px;
-        margin-left: -210px;
-        padding: 5px 10px;
-        font-family: Athelas, STHeiti, Microsoft Yahei, serif;
-        font-size: 12px;
-        border: 1px solid rgba(0, 0, 0, .07);
-        border-radius: 5px;
-        background-color: rgba(255, 255, 255, 0.98);
-        background-clip: padding-box;
-        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
-        box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
-        word-wrap: break-word;
-        white-space: nowrap;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        z-index: 999;
-        cursor: pointer;
-        max-height: 70%;
-        overflow-y: auto;
-        overflow-x: hidden;
-    }
-
-    .post-toc .post-toc-title {
-        width: 100%;
-        margin: 0 auto;
-        font-size: 20px;
-        font-weight: 400;
-        text-transform: uppercase;
-        text-align: center;
-    }
-
-    .post-toc .post-toc-content {
-        font-size: 15px;
-    }
-
-    .post-toc .post-toc-content>nav>ul {
-        margin: 10px 0;
-    }
-
-    .post-toc .post-toc-content ul {
-        padding-left: 20px;
-        list-style: square;
-        margin: 0.5em;
-        line-height: 1.8em;
-    }
-
-    .post-toc .post-toc-content ul ul {
-        padding-left: 15px;
-        display: none;
-    }
-
-    @media print,
-    screen and (max-width:1057px) {
-        .post-toc {
-            display: none;
-        }
-    }
-</style>
-<div class="post-toc" style="position: absolute; top: 188px;">
-    <h2 class="post-toc-title">文章目录</h2>
-    <div class="post-toc-content">
-        <nav id="TableOfContents">
-  <ul>
-    <li><a href="#新增-cname-记录">新增 CNAME 记录</a></li>
-    <li><a href="#custom-domain-设置">Custom domain 设置</a></li>
-    <li><a href="#hugo-配置">Hugo 配置</a></li>
-  </ul>
-</nav>
-    </div>
-</div>
-<script type="text/javascript">
-    $(document).ready(function () {
-        var postToc = $(".post-toc");
-        if (postToc.length) {
-            var leftPos = $("#main").offset().left;
-            if(leftPos<220){
-                postToc.css({"width":leftPos-10,"margin-left":(0-leftPos)})
-            }
-
-            var t = postToc.offset().top - 20,
-                a = {
-                    start: {
-                        position: "absolute",
-                        top: t
-                    },
-                    process: {
-                        position: "fixed",
-                        top: 20
-                    },
-                };
-            $(window).scroll(function () {
-                var e = $(window).scrollTop();
-                e < t ? postToc.css(a.start) : postToc.css(a.process)
-            })
-        }
-    })
-</script>
+    
     <article class="post">
         <header>
             <h1 class="post-title">Hugo &#43; GithubPage 自定义域名并支持 HTTPS</h1>
@@ -190,12 +91,6 @@
                     阅读</span></span>
         </div>
         
-        
-        <div class="clear" style="display: none">
-            <div class="toc-article">
-                <div class="toc-title">文章目录</div>
-            </div>
-        </div>
         
         <div class="post-content">
             <p>因为 WordPress 的 maupassant 主题没有 Hugo 上的好看，而且基本不用 WordPress，以及学生机访问较慢，所以决定将 blog.zxbzn.com 设置为 anguoi.github.io 的 Custom domain，白嫖 Github。</p>
@@ -225,30 +120,13 @@
 <p><img src="githubpage-setting.png" alt="githubpage-setting"></p>
 <h2 id="hugo-配置">Hugo 配置</h2>
 <p><code>config.toml</code></p>
-<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#998;font-style:italic"># 注意换成你的自定义域名</span>
-baseURL = <span style="color:#d14">&#34;https://blog.zxbzn.com/&#34;</span>
-</code></pre></td></tr></table>
-</div>
-</div><p><code>wercker.yml</code></p>
-<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml"><span style="color:#998;font-style:italic"># 注意换成你的自定义域名</span><span style="color:#bbb">
-</span><span style="color:#bbb"></span>- <span style="color:#000;font-weight:bold">nztomas/gh-pages@0.2.4</span>:<span style="color:#bbb">
-</span><span style="color:#bbb">    </span><span style="color:#000;font-weight:bold">domain</span>:<span style="color:#bbb"> </span>blog.zxbzn.com<span style="color:#bbb">
-</span></code></pre></td></tr></table>
-</div>
-</div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#75715e"># 注意换成你的自定义域名</span>
+<span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;https://blog.zxbzn.com/&#34;</span>
+</code></pre></div><p><code>wercker.yml</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml"><span style="color:#75715e"># 注意换成你的自定义域名</span>
+- <span style="color:#66d9ef">nztomas/gh-pages@0.2.4</span>:
+    <span style="color:#66d9ef">domain</span>: blog.zxbzn.com
+</code></pre></div>
         </div>
 
         
@@ -302,7 +180,6 @@ baseURL = <span style="color:#d14">&#34;https://blog.zxbzn.com/&#34;</span>
       <script src="https://utteranc.es/client.js"
             repo= "vhxubo/utterances-comment"
             issue-term="pathname"
-            label="blog"
             theme="github-light"
             crossorigin="anonymous"
             async>
@@ -314,58 +191,6 @@ baseURL = <span style="color:#d14">&#34;https://blog.zxbzn.com/&#34;</span>
                 </div>
 
                 <div id="secondary">
-    <section style="margin-bottom:18px;">
-        <div style="text-align: center;">
-    <img src="http://q.qlogo.cn/headimg_dl?dst_uin=2711402167&amp;spec=640&amp;img_type=jpg"
-        style="width: 50px;height: 50px;vertical-align: -20px;border-radius: 50%;margin-right: 5px;margin-bottom: 5px;-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.1), 1px 1px 1px rgba(0,0,0,0.1), 1px 1px 1px rgba(0,0,0,0.1);box-shadow: 1px 1px 1px rgba(0,0,0,.1), 1px 1px 1px rgba(0,0,0,0.1), 1px 1px 1px rgba(0,0,0,0.1);border: 2px solid #fff;">
-    <i id="heart" style="color:red;font-size: 25px;font-style:normal;padding:5px;">♥</i>
-    <img src="http://q.qlogo.cn/headimg_dl?dst_uin=925122985&amp;spec=640&amp;img_type=jpg"
-        style="width: 50px;height: 50px;vertical-align: -20px;border-radius: 50%;margin-right: 5px;margin-bottom: 5px;-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.1), 1px 1px 1px rgba(0,0,0,0.1), 1px 1px 1px rgba(0,0,0,0.1);box-shadow: 1px 1px 1px rgba(0,0,0,.1), 1px 1px 1px rgba(0,0,0,0.1), 1px 1px 1px rgba(0,0,0,0.1);border: 2px solid #fff;">
-    <div id="duration"></div>
-    <script timestamp="1415721600">
-        var create_time = document.currentScript.getAttribute("timestamp");
-        if (create_time !== null && create_time !== "") {
-            function setTime() {
-                var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
-                currentTime = secondToDate((timestamp - create_time - 28800));
-                currentTimeHtml = currentTime[0] + ' 年 ' + currentTime[1] + ' 天 ' +
-                    currentTime[2] + ' 时 ' + currentTime[3] + ' 分 ' + currentTime[4] +
-                    ' 秒';
-                document.getElementById("duration").innerHTML = currentTimeHtml;
-            }
-
-            function secondToDate(second) {
-                if (!second) {
-                    return 0;
-                }
-                var time = new Array(0, 0, 0, 0, 0);
-                if (second >= 365 * 24 * 3600) {
-                    time[0] = parseInt(second / (365 * 24 * 3600));
-                    second %= 365 * 24 * 3600;
-                }
-                if (second >= 24 * 3600) {
-                    time[1] = parseInt(second / (24 * 3600));
-                    second %= 24 * 3600;
-                }
-                if (second >= 3600) {
-                    time[2] = parseInt(second / 3600);
-                    second %= 3600;
-                }
-                if (second >= 60) {
-                    time[3] = parseInt(second / 60);
-                    second %= 60;
-                }
-                if (second > 0) {
-                    time[4] = second;
-                }
-                return time;
-            }
-            setTime();
-            setInterval(setTime, 1000);
-        }
-    </script>
-</div>
-    </section>
     <section class="widget">
         <form id="search" action='https://blog.vhxubo.com/search/' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
       
@@ -374,6 +199,7 @@ baseURL = <span style="color:#d14">&#34;https://blog.zxbzn.com/&#34;</span>
       <button type="submit" class="submit icon-search"></button>
 </form>
     </section>
+    
     <section class="widget">
         <h3 class="widget-title">最近文章</h3>
 <ul class="widget-list">
@@ -432,6 +258,7 @@ baseURL = <span style="color:#d14">&#34;https://blog.zxbzn.com/&#34;</span>
     <footer id="footer">
     <div class="container">
         &copy; 2020 <a href="https://blog.vhxubo.com">Vhxubo&#39;s blog By Vhxubo</a>.
+        <a href="http://www.beian.miit.gov.cn/" target="_blank">豫ICP备18040132号-3</a>
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         

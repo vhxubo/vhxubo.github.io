@@ -89,10 +89,10 @@ P.S. 请将鼠标移动到目录上测试
 <a rel="nofollow" href="{{ .Site.BaseURL }}" class="index404">回首页看看</a>
 ```
 
-修改 `themes/maupassant/layouts/_default/single.html`，只对类型为 post 的启用
+修改 `themes/maupassant/layouts/_default/single.html`，只对类型为 post 和 tool 的启用
 
 ```
-{{ if eq .Type "post"}}
+{{ if or (eq .Type "post") (eq .Type "tool") }}
   {{ partial "related" . }}
 {{ end }}
 ```

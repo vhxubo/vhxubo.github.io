@@ -5,7 +5,6 @@ type: post
 tags: ["OpenGL"]
 categories: ["开发者手册"]
 toc: true
-draft: true
 ---
 
 3D 图形学课程需要使用到 OpenGL ，参考已有教程配置总是遇到很多问题，毕竟部分教程已经过时了。
@@ -131,6 +130,8 @@ draft: true
 - 将 `glad.c` 加入到项目中
 
 ## 测试代码
+
+在 `main.cpp` 中加入以下代码，运行之后会生成一个黑色窗口。
 
 ```C++
 #include <glad/glad.h>

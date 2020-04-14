@@ -3,8 +3,7 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 type: post
 tags: [""]
-categories:
-  - ""
+categories:[""]
 toc: true
 draft: true
 ---

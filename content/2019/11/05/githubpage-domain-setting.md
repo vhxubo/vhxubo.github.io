@@ -6,18 +6,19 @@ type: post
 tags: ["GithubPage","Custom domain","Hugo"]
 categories:
   - "开发者手册"
+toc: true
 ---
-因为 WordPress 的 maupassant 主题没有 Hugo 上的好看，而且基本不用 WordPress，以及学生机访问较慢，所以决定将 blog.zxbzn.com 设置为 anguoi.github.io 的 Custom domain，白嫖 Github。
+因为 WordPress 的 maupassant 主题没有 Hugo 上的好看，而且基本不用 WordPress，以及学生机访问较慢，所以决定将 blog.vhxubo.com 设置为 vhxubo.github.io 的 Custom domain，白嫖 Github。
 
 根据网上已有文章，新增 A 记录设置 Custom domain 后，发现 GithubPage 有如下提示:
 
-> Your site's DNS settings are using a custom subdomain, blog.zxbzn.com, that's set up as an A record. We recommend you change this to a CNAME record pointing at [YOUR USERNAME].github.io. For more information, see https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/.
+> Your site's DNS settings are using a custom subdomain, blog.vhxubo.com, that's set up as an A record. We recommend you change this to a CNAME record pointing at [YOUR USERNAME].github.io. For more information, see https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/.
 
 大概意思是: 不推荐使用`A 记录 - 将域名指向一个 IPV4 地址`，应该更换为`CNAME - 将域名指向另一个域名`，记录值填写为: [YOUR USERNAME].github.io。
 
 所以，为啥呢？
 
-以我的 anguoi.github.io 为例，每隔段时间后执行`ping anguoi.github.io`，对应的 IP 值会有所改变。
+以我的 vhxubo.github.io 为例，每隔段时间后执行`ping vhxubo.github.io`，对应的 IP 值会有所改变。
 
 可以得出：设置 A 记录，只能指向某个 IP；而设置 CNAME 记录，则可以跳转到多个 IP。
 
@@ -50,7 +51,7 @@ categories:
 
 ```toml
 # 注意换成你的自定义域名
-baseURL = "https://blog.zxbzn.com/"
+baseURL = "https://blog.vhxubo.com/"
 ```
 
 `wercker.yml`
@@ -58,5 +59,5 @@ baseURL = "https://blog.zxbzn.com/"
 ```yml
 # 注意换成你的自定义域名
 - nztomas/gh-pages@0.2.4:
-    domain: blog.zxbzn.com
+    domain: blog.vhxubo.com
 ```

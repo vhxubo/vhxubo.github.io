@@ -1,0 +1,16 @@
+.post-toc {
+  overflow: hidden; /*隐藏溢出元素*/
+  width: unset !important; /*清除原始宽度*/
+  max-width: 50px; /*最初最大宽度*/
+  transition: all .3s cubic-bezier(0.5, 1, 0.89, 1); /*过渡动画*/
+}
+
+.post-toc:hover,
+.post-toc:active {
+  max-width: 300px; /*展开最大宽度*/
+  width: auto !important; /*自适应宽度*/
+}
+
+.post-content ul li {
+  text-indent: 0 !important;
+}

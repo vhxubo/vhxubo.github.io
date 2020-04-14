@@ -16,7 +16,7 @@ enableEmoji = true
   subtitle = "专注摸鱼、踩坑，热衷于学习并开发各种插件"
   keywords = "Vhxubo,AngUOI,Guimi,博客"
   description = "记录有用的知识"
-  customCSS = ['toc_style.css']
+  customCSS = ['custom_style.css']
   busuanzi = true
   localSearch = true
 
@@ -30,6 +30,13 @@ enableEmoji = true
     issueTerm = "pathname"
     theme = "github-light"
     label = "blog"
+    
+[markup]
+  [markup.highlight]
+    style = "github"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [menu]
 

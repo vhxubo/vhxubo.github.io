@@ -35,7 +35,9 @@
 
         {{ partial "copyright" .}}
 
+        {{ if eq .Type "post"}}
         {{ partial "related" . }}
+        {{ end }}
 
         <div class="post-meta meta-tags">
             {{ if and (isset .Params "tags") .Params.tags }}

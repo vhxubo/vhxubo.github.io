@@ -16,7 +16,6 @@ enableEmoji = true
   subtitle = "专注摸鱼、踩坑，热衷于学习并开发各种插件"
   keywords = "Vhxubo,AngUOI,Guimi,博客"
   description = "记录有用的知识"
-  customCSS = ['custom_style.css']
   busuanzi = true
   localSearch = true
 

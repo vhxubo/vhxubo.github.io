@@ -142,11 +142,13 @@
         <li><a href="#去除知乎推荐的视频">去除知乎推荐的视频</a></li>
         <li><a href="#将推荐大图改为小图">将推荐大图改为小图</a></li>
         <li><a href="#不显示视频只显示文字">不显示视频，只显示文字</a></li>
+        <li><a href="#知乎探索版广告过滤">知乎（探索版）广告过滤</a></li>
       </ul>
     </li>
     <li><a href="#哔哩哔哩">哔哩哔哩</a>
       <ul>
         <li><a href="#去除哔哩哔哩推荐的文章动态">去除哔哩哔哩推荐的文章/动态</a></li>
+        <li><a href="#bilibili-移动客户端增强">Bilibili 移动客户端增强</a></li>
       </ul>
     </li>
   </ul>
@@ -219,12 +221,35 @@
 <pre><code>||api.zhihu.com/topstory/recommend*$replace=/&quot;BIG_IMAGE&quot;/&quot;SMALL_IMAGE&quot;/s
 </code></pre><h3 id="不显示视频只显示文字">不显示视频，只显示文字</h3>
 <pre><code>||api.zhihu.com/topstory/recommend*$replace=/&quot;video&quot;/&quot;novideo&quot;/s
-</code></pre><h2 id="哔哩哔哩">哔哩哔哩</h2>
+</code></pre><h3 id="知乎探索版广告过滤">知乎（探索版）广告过滤</h3>
+<p>普通版: <a href="https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu.txt">https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu.txt</a></p>
+<p>严格版: <a href="https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu-strict.txt">https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu-strict.txt</a></p>
+<h4 id="功能">功能</h4>
+<ul>
+<li>去除开屏广告</li>
+<li>去除时间轴广告</li>
+<li>去除首页推荐广告</li>
+<li>去除问题的回答列表广告</li>
+<li>去除回答底部的广告</li>
+<li>去除评论区广告</li>
+<li>去除个人中心的 VIP 横幅</li>
+<li>去除知乎会员推荐的内容（严格版）</li>
+</ul>
+<h2 id="哔哩哔哩">哔哩哔哩</h2>
 <p>与知乎相反，我只想让哔哩哔哩安安静静的做一个视频软件。</p>
 <h3 id="去除哔哩哔哩推荐的文章动态">去除哔哩哔哩推荐的文章/动态</h3>
 <pre><code>||app.biliapi.com/x/v2/feed/index$replace=/{&quot;card_type&quot;:&quot;one_pic_v3&quot;.+?}\,{&quot;card_type&quot;/{&quot;card_type&quot;/s
 ||app.bilibili.com/x/v2/feed/index$replace=/{&quot;card_type&quot;:&quot;one_pic_v3&quot;.+?}\,{&quot;card_type&quot;/{&quot;card_type&quot;/s
-</code></pre>
+</code></pre><h3 id="bilibili-移动客户端增强">Bilibili 移动客户端增强</h3>
+<p>规则地址: <a href="https://raw.githubusercontent.com/Kr328/AdGuard-Custom-Rule/master/rule/bilibili.txt">https://raw.githubusercontent.com/Kr328/AdGuard-Custom-Rule/master/rule/bilibili.txt</a></p>
+<h4 id="功能-1">功能</h4>
+<ul>
+<li>去除评论区广告</li>
+<li>去除首页卡片广告</li>
+<li>允许缓存任意动画</li>
+<li>去除首页会员购和游戏中心</li>
+</ul>
+
         </div>
 
         

@@ -2,10 +2,12 @@ baseURL = "https://blog.vhxubo.com"
 languageCode = "zh-CN"
 title = "Vhxubo's blog"
 theme = "maupassant"
+googleAnalytics = "UA-163590153-1"
 
 summaryLength = 140
 hasCJKLanguage = true
 enableEmoji = true
+
 [author]
   name = "Vhxubo"
 

@@ -33,6 +33,23 @@ toc: true
 ||api.zhihu.com/topstory/recommend*$replace=/"video"/"novideo"/s
 ```
 
+### 知乎（探索版）广告过滤
+
+普通版: https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu.txt
+
+严格版: https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu-strict.txt
+
+#### 功能
+
+- 去除开屏广告
+- 去除时间轴广告
+- 去除首页推荐广告
+- 去除问题的回答列表广告
+- 去除回答底部的广告
+- 去除评论区广告
+- 去除个人中心的 VIP 横幅
+- 去除知乎会员推荐的内容（严格版）
+
 ## 哔哩哔哩
 
 与知乎相反，我只想让哔哩哔哩安安静静的做一个视频软件。
@@ -43,3 +60,14 @@ toc: true
 ||app.biliapi.com/x/v2/feed/index$replace=/{"card_type":"one_pic_v3".+?}\,{"card_type"/{"card_type"/s
 ||app.bilibili.com/x/v2/feed/index$replace=/{"card_type":"one_pic_v3".+?}\,{"card_type"/{"card_type"/s
 ```
+
+### Bilibili 移动客户端增强
+
+规则地址: https://raw.githubusercontent.com/Kr328/AdGuard-Custom-Rule/master/rule/bilibili.txt
+
+#### 功能
+
+- 去除评论区广告
+- 去除首页卡片广告
+- 允许缓存任意动画
+- 去除首页会员购和游戏中心

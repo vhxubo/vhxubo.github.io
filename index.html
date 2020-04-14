@@ -71,6 +71,29 @@
     <article class="post">
         <header>
             <h1 class="post-title">
+                <a href="https://blog.vhxubo.com/2020/04/14/adguard-rules/" title="Adguard Rules">Adguard Rules</a>
+            </h1>
+        </header>
+        <date class="post-meta meta-date">
+            2020年4月14日
+        </date>
+        
+        <div class="post-meta">
+            <span>|</span>
+            
+            <span class="meta-category"><a href='https://blog.vhxubo.com/categories/%E5%B7%A5%E5%85%B7'>工具</a></span>
+            
+        </div>
+        
+        <div class="post-content">
+            知乎 每当我打开知乎，刷新推荐，第一个必然是视频，然后我就得沉迷其中，忘却我打开知乎的真正目的。 这严重影响了我的日常进度，知乎啊！我就是打开你找点资料呀！！ 那就让我干掉你推荐的视频吧，嘻嘻嘻。 去除知乎推荐的视频 ||api.zhihu.com/topstory/recommend*$replace=/{&quot;id&quot;.+?&quot;video&quot;.+?null}\,?//s 将推荐大图改为小图 ||api.zhihu.com/topstory/recommend*$replace=/&quot;BIG_IMAGE&quot;/&quot;SMALL_IMAGE&quot;/s 不显示视频，只显示文字 ||api.zhihu.com/topstory/recommend*$replace=/&quot;video&quot;/&quot;novideo&quot;/s 哔哩哔哩 与知乎相反，我只想……
+        </div>
+        <p class="readmore"><a href="https://blog.vhxubo.com/2020/04/14/adguard-rules/">阅读全文</a></p>
+    </article>
+    
+    <article class="post">
+        <header>
+            <h1 class="post-title">
                 <a href="https://blog.vhxubo.com/2019/11/05/githubpage-domain-setting/" title="Hugo &#43; GithubPage 自定义域名并支持 HTTPS">Hugo &#43; GithubPage 自定义域名并支持 HTTPS</a>
             </h1>
         </header>
@@ -139,6 +162,10 @@
 <ul class="widget-list">
     
     <li>
+        <a href="https://blog.vhxubo.com/2020/04/14/adguard-rules/" title="Adguard Rules">Adguard Rules</a>
+    </li>
+    
+    <li>
         <a href="https://blog.vhxubo.com/2019/11/05/githubpage-domain-setting/" title="Hugo &#43; GithubPage 自定义域名并支持 HTTPS">Hugo &#43; GithubPage 自定义域名并支持 HTTPS</a>
     </li>
     
@@ -155,6 +182,8 @@
         <h3 class="widget-title">分类</h3>
 <ul class="widget-list">
     
+    <li><a href="https://blog.vhxubo.com/categories/%E5%B7%A5%E5%85%B7/">工具 (1)</a></li>
+    
     <li><a href="https://blog.vhxubo.com/categories/%E5%BC%80%E5%8F%91%E8%80%85%E6%89%8B%E5%86%8C/">开发者手册 (1)</a></li>
     
     <li><a href="https://blog.vhxubo.com/categories/%E8%A7%81%E9%97%BB%E4%B8%8E%E6%84%9F%E6%82%9F/">见闻与感悟 (1)</a></li>
@@ -165,6 +194,8 @@
     <section class="widget">
         <h3 class="widget-title">标签</h3>
 <div class="tagcloud">
+    
+    <a href="https://blog.vhxubo.com/tags/adguard/">Adguard</a>
     
     <a href="https://blog.vhxubo.com/tags/custom-domain/">Custom domain</a>
     

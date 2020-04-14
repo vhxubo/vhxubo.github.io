@@ -6,10 +6,19 @@
     <description>Recent content in 开发者手册 on Vhxubo&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 05 Nov 2019 21:16:48 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 14 Apr 2020 11:47:33 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.vhxubo.com/categories/%E5%BC%80%E5%8F%91%E8%80%85%E6%89%8B%E5%86%8C/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OpenGL(Windows) 配置 - Visual Studio 2017 &#43; GLFW &#43; GLAD</title>
+      <link>https://blog.vhxubo.com/2020/04/14/opengl-configuration/</link>
+      <pubDate>Tue, 14 Apr 2020 11:47:33 +0800</pubDate>
+      
+      <guid>https://blog.vhxubo.com/2020/04/14/opengl-configuration/</guid>
+      <description>3D 图形学课程需要使用到 OpenGL ，参考已有教程配置总是遇到很多问题，毕竟部分教程已经过时了。 因此，结合我遇到的问题，写下一个条理更加清晰的新版配置流程。 先决条件 Visual Studio 2017 良好的网络环境 配置好的目录结构 - [项目名] - [项目名] - glad.c - opengl - include - glad - glad.h - GLFW - glfw3.h - glfw3native.h - KHR - khrplatform.h - lib -glfw3.lib Visual Studio 2017 配置 安装 Visual Studio 2017 时</description>
+    </item>
     
     <item>
       <title>Hugo &#43; GithubPage 自定义域名并支持 HTTPS</title>

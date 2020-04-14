@@ -6,20 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Adguard Rules | Vhxubo&#39;s blog</title>
-    <meta property="og:title" content="Adguard Rules - Vhxubo&#39;s blog">
+    <title>Maupassant 主题优化 | Vhxubo&#39;s blog</title>
+    <meta property="og:title" content="Maupassant 主题优化 - Vhxubo&#39;s blog">
     <meta property="og:type" content="article">
         
-    <meta property="article:published_time" content='2020-04-14T11:05:06&#43;08:00'>
+    <meta property="article:published_time" content='2020-04-14T15:00:41&#43;08:00'>
         
         
-    <meta property="article:modified_time" content='2020-04-14T11:05:06&#43;08:00'>
+    <meta property="article:modified_time" content='2020-04-14T15:00:41&#43;08:00'>
         
     <meta name="Keywords" content="Vhxubo,AngUOI,Guimi,博客">
-    <meta name="description" content="Adguard Rules">
+    <meta name="description" content="Maupassant 主题优化">
         
     <meta name="author" content="Vhxubo">
-    <meta property="og:url" content="https://blog.vhxubo.com/2020/04/14/adguard-rules/">
+    <meta property="og:url" content="https://blog.vhxubo.com/2020/04/14/maupassant-optimize/">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href='/css/normalize.css'>
@@ -137,20 +137,10 @@
     <div class="post-toc-content">
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#知乎">知乎</a>
-      <ul>
-        <li><a href="#去除知乎推荐的视频">去除知乎推荐的视频</a></li>
-        <li><a href="#将推荐大图改为小图">将推荐大图改为小图</a></li>
-        <li><a href="#不显示视频只显示文字">不显示视频，只显示文字</a></li>
-        <li><a href="#知乎探索版广告过滤">知乎（探索版）广告过滤</a></li>
-      </ul>
-    </li>
-    <li><a href="#哔哩哔哩">哔哩哔哩</a>
-      <ul>
-        <li><a href="#去除哔哩哔哩推荐的文章动态">去除哔哩哔哩推荐的文章/动态</a></li>
-        <li><a href="#bilibili-移动客户端增强">Bilibili 移动客户端增强</a></li>
-      </ul>
-    </li>
+    <li><a href="#目录显示">目录显示</a></li>
+    <li><a href="#增加备案号">增加备案号</a></li>
+    <li><a href="#去除-404-和-about-的-see-also">去除 404 和 about 的 See Also</a></li>
+    <li><a href="#修复列表对不齐">修复列表对不齐</a></li>
   </ul>
 </nav>
     </div>
@@ -184,7 +174,7 @@
 </script>
     <article class="post">
         <header>
-            <h1 class="post-title">Adguard Rules</h1>
+            <h1 class="post-title">Maupassant 主题优化</h1>
         </header>
         <date class="post-meta meta-date">
             2020年4月14日
@@ -211,52 +201,82 @@
         </div>
         
         <div class="post-content">
-            <h2 id="知乎">知乎</h2>
-<p>每当我打开知乎，刷新推荐，第一个必然是视频，然后我就得沉迷其中，忘却我打开知乎的真正目的。</p>
-<p>这严重影响了我的日常进度，知乎啊！我就是打开你找点资料呀！！</p>
-<p>那就让我干掉你推荐的视频吧，嘻嘻嘻。</p>
-<h3 id="去除知乎推荐的视频">去除知乎推荐的视频</h3>
-<pre><code>||api.zhihu.com/topstory/recommend*$replace=/{&quot;id&quot;.+?&quot;video&quot;.+?null}\,?//s
-</code></pre><h3 id="将推荐大图改为小图">将推荐大图改为小图</h3>
-<pre><code>||api.zhihu.com/topstory/recommend*$replace=/&quot;BIG_IMAGE&quot;/&quot;SMALL_IMAGE&quot;/s
-</code></pre><h3 id="不显示视频只显示文字">不显示视频，只显示文字</h3>
-<pre><code>||api.zhihu.com/topstory/recommend*$replace=/&quot;video&quot;/&quot;novideo&quot;/s
-</code></pre><h3 id="知乎探索版广告过滤">知乎（探索版）广告过滤</h3>
-<p>普通版: <a href="https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu.txt">https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu.txt</a></p>
-<p>严格版: <a href="https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu-strict.txt">https://raw.githubusercontent.com/zsakvo/AdGuard-Custom-Rule/master/rule/zhihu-strict.txt</a></p>
-<h4 id="功能">功能</h4>
-<ul>
-<li>去除开屏广告</li>
-<li>去除时间轴广告</li>
-<li>去除首页推荐广告</li>
-<li>去除问题的回答列表广告</li>
-<li>去除回答底部的广告</li>
-<li>去除评论区广告</li>
-<li>去除个人中心的 VIP 横幅</li>
-<li>去除知乎会员推荐的内容（严格版）</li>
-</ul>
-<h2 id="哔哩哔哩">哔哩哔哩</h2>
-<p>与知乎相反，我只想让哔哩哔哩安安静静的做一个视频软件。</p>
-<h3 id="去除哔哩哔哩推荐的文章动态">去除哔哩哔哩推荐的文章/动态</h3>
-<pre><code>||app.biliapi.com/x/v2/feed/index$replace=/{&quot;card_type&quot;:&quot;one_pic_v3&quot;.+?}\,{&quot;card_type&quot;/{&quot;card_type&quot;/s
-||app.bilibili.com/x/v2/feed/index$replace=/{&quot;card_type&quot;:&quot;one_pic_v3&quot;.+?}\,{&quot;card_type&quot;/{&quot;card_type&quot;/s
-</code></pre><h3 id="bilibili-移动客户端增强">Bilibili 移动客户端增强</h3>
-<p>规则地址: <a href="https://raw.githubusercontent.com/Kr328/AdGuard-Custom-Rule/master/rule/bilibili.txt">https://raw.githubusercontent.com/Kr328/AdGuard-Custom-Rule/master/rule/bilibili.txt</a></p>
-<h4 id="功能-1">功能</h4>
-<ul>
-<li>去除评论区广告</li>
-<li>去除首页卡片广告</li>
-<li>允许缓存任意动画</li>
-<li>去除首页会员购和游戏中心</li>
-</ul>
+            <p>maupassant 是我最喜欢的一个主题，以下记录了对本博客主题的优化。</p>
+<h2 id="目录显示">目录显示</h2>
+<p>在 <code>themes/maupassant/static/css</code> 目录下新建 <code>custom_style.css</code> 文件，填入以下内容，效果如左侧所示。</p>
+<p>该版本可以自适应最长的标题，最宽为 300px = 放 17 个汉字</p>
+<p>P.S. 请将鼠标移动到目录上测试</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#458;font-weight:bold">post-toc</span> {
+  <span style="color:#000;font-weight:bold">overflow</span>: <span style="color:#000;font-weight:bold">hidden</span>; <span style="color:#998;font-style:italic">/*隐藏溢出元素*/</span>
+  <span style="color:#000;font-weight:bold">width</span>: <span style="color:#000;font-weight:bold">unset</span> <span style="color:#999;font-weight:bold;font-style:italic">!important</span>; <span style="color:#998;font-style:italic">/*清除原始宽度*/</span>
+  <span style="color:#000;font-weight:bold">max-width</span>: <span style="color:#099">50</span><span style="color:#458;font-weight:bold">px</span>; <span style="color:#998;font-style:italic">/*最初最大宽度*/</span>
+  <span style="color:#000;font-weight:bold">transition</span>: <span style="color:#000;font-weight:bold">all</span> <span style="color:#099">0.3</span><span style="color:#458;font-weight:bold">s</span> <span style="color:#0086b3">cubic-bezier</span>(<span style="color:#099">0.5</span>, <span style="color:#099">1</span>, <span style="color:#099">0.89</span>, <span style="color:#099">1</span>); <span style="color:#998;font-style:italic">/*过渡动画*/</span>
+}
 
+.<span style="color:#458;font-weight:bold">post-toc</span>:<span style="color:#3c5d5d;font-weight:bold">hover</span><span style="color:#000;font-weight:bold">,</span>
+.<span style="color:#458;font-weight:bold">post-toc</span>:<span style="color:#3c5d5d;font-weight:bold">active</span> {
+  <span style="color:#000;font-weight:bold">max-width</span>: <span style="color:#099">300</span><span style="color:#458;font-weight:bold">px</span>; <span style="color:#998;font-style:italic">/*展开最大宽度*/</span>
+  <span style="color:#000;font-weight:bold">width</span>: <span style="color:#000;font-weight:bold">auto</span> <span style="color:#999;font-weight:bold;font-style:italic">!important</span>; <span style="color:#998;font-style:italic">/*自适应宽度*/</span>
+}
+</code></pre></div><p>在 <code>config.toml</code> 中增加以下内容:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[params]
+  customCSS = [<span style="color:#d14">&#39;custom_style.css&#39;</span>]
+</code></pre></div><h2 id="增加备案号">增加备案号</h2>
+<p>修改 <code>themes/maupassant/layouts/partials/footer.html</code></p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080">footer</span> <span style="color:#008080">id</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;footer&#34;</span>&gt;
+  &lt;<span style="color:#000080">div</span> <span style="color:#008080">class</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;container&#34;</span>&gt;
+    <span style="color:#800080">&amp;copy;</span> {{ now.Format &#34;2006&#34; }}
+    &lt;<span style="color:#000080">a</span> <span style="color:#008080">href</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;{{ .Site.BaseURL | absURL }}&#34;</span>
+      &gt;{{ .Site.Title }} By {{ .Site.Author.name }}&lt;/<span style="color:#000080">a</span>
+    &gt;.
+    <span style="color:#998;font-style:italic">&lt;!-- 修改开始----&gt;</span>
+    &lt;<span style="color:#000080">a</span> <span style="color:#008080">href</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;http://www.beian.miit.gov.cn/&#34;</span> <span style="color:#008080">target</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;_blank&#34;</span>
+      &gt;豫ICP备18040132号-3&lt;/<span style="color:#000080">a</span>
+    &gt;
+    <span style="color:#998;font-style:italic">&lt;!-- 修改结束----&gt;</span>
+    Powered by
+    &lt;<span style="color:#000080">a</span>
+      <span style="color:#008080">rel</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;nofollow noreferer noopener&#34;</span>
+      <span style="color:#008080">href</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;https://gohugo.io&#34;</span>
+      <span style="color:#008080">target</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;_blank&#34;</span>
+      &gt;Hugo&lt;/<span style="color:#000080">a</span>
+    &gt;. &lt;<span style="color:#000080">a</span> <span style="color:#008080">href</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;https://www.flysnow.org/&#34;</span> <span style="color:#008080">target</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;_blank&#34;</span>&gt;Theme&lt;/<span style="color:#000080">a</span>&gt; based on
+    &lt;<span style="color:#000080">a</span> <span style="color:#008080">href</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;https://github.com/flysnow-org/maupassant-hugo&#34;</span> <span style="color:#008080">target</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;_blank&#34;</span>
+      &gt;maupassant&lt;/<span style="color:#000080">a</span>
+    &gt;. {{ if .Site.Params.showHostPage }} Hosted by
+    &lt;<span style="color:#000080">a</span>
+      <span style="color:#008080">rel</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;nofollow noreferer noopener&#34;</span>
+      <span style="color:#008080">href</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;https://pages.coding.me&#34;</span>
+      <span style="color:#008080">target</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;_blank&#34;</span>
+      &gt;Coding Pages&lt;/<span style="color:#000080">a</span>
+    &gt;. {{ end }}
+  &lt;/<span style="color:#000080">div</span>&gt;
+&lt;/<span style="color:#000080">footer</span>&gt;
+</code></pre></div><h2 id="去除-404-和-about-的-see-also">去除 404 和 about 的 See Also</h2>
+<p>修改 <code>themes/maupassant/layouts/404.html</code></p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#000080">div</span> <span style="color:#008080">class</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;title404&#34;</span>&gt;
+    &lt;<span style="color:#000080">p</span>&gt;每一个平凡的日常&lt;<span style="color:#000080">br</span> /&gt;都是连续发生中的奇迹&lt;/<span style="color:#000080">p</span>&gt;
+&lt;/<span style="color:#000080">div</span>&gt;
+<span style="color:#998;font-style:italic">&lt;!-- 删除开始----&gt;</span>
+{{ partial &#34;related&#34; . }}
+<span style="color:#998;font-style:italic">&lt;!-- 删除结束----&gt;</span>
+&lt;<span style="color:#000080">a</span> <span style="color:#008080">rel</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;nofollow&#34;</span> <span style="color:#008080">href</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;{{ .Site.BaseURL }}&#34;</span> <span style="color:#008080">class</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;index404&#34;</span>&gt;回首页看看&lt;/<span style="color:#000080">a</span>&gt;
+</code></pre></div><p>修改 <code>themes/maupassant/layouts/_default/single.html</code>，只对类型为 post 和 tool 的启用</p>
+<pre><code>{{ if or (eq .Type &quot;post&quot;) (eq .Type &quot;tool&quot;) }}
+  {{ partial &quot;related&quot; . }}
+{{ end }}
+</code></pre><h2 id="修复列表对不齐">修复列表对不齐</h2>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#458;font-weight:bold">post-content</span> <span style="color:#000080">ul</span> <span style="color:#000080">li</span> {
+  <span style="color:#000;font-weight:bold">text-indent</span>: <span style="color:#099">0</span> <span style="color:#999;font-weight:bold;font-style:italic">!important</span>;
+}
+</code></pre></div>
         </div>
 
         
 <div class="post-archive">
     <ul class="post-copyright">
         <li><strong>原文作者：</strong><a rel="author" href="https://blog.vhxubo.com">Vhxubo</a></li>
-        <li style="word-break:break-all"><strong>原文链接：</strong><a href="https://blog.vhxubo.com/2020/04/14/adguard-rules/">https://blog.vhxubo.com/2020/04/14/adguard-rules/</a></li>
+        <li style="word-break:break-all"><strong>原文链接：</strong><a href="https://blog.vhxubo.com/2020/04/14/maupassant-optimize/">https://blog.vhxubo.com/2020/04/14/maupassant-optimize/</a></li>
         <li><strong>版权声明：</strong>本作品采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>进行许可，非商业转载请注明出处（作者，原文链接），商业转载请联系作者获得授权。</li>
     </ul>
 </div>
@@ -271,15 +291,15 @@
     <h2>See Also</h2>
     <ul class="listing">
         
+        <li><a href="/2020/04/14/opengl-configuration/">OpenGL(Windows) 配置 - Visual Studio 2017 &#43; GLFW &#43; GLAD</a></li>
+        
+        <li><a href="/2020/04/14/adguard-rules/">Adguard Rules</a></li>
+        
         <li><a href="/2019/11/05/githubpage-domain-setting/">Hugo &#43; GithubPage 自定义域名并支持 HTTPS</a></li>
         
         <li><a href="/2019/11/05/note-tools-line/">笔记/写作工具迁移之旅</a></li>
         
         <li><a href="/about/">关于</a></li>
-        
-        <li><a href="/archives/">归档</a></li>
-        
-        <li><a href="/search/">搜索</a></li>
         
     </ul>
 </div>
@@ -290,7 +310,11 @@
             
             <ul class="clearfix">
                 
-                <li><a href='https://blog.vhxubo.com/tags/adguard'>Adguard</a></li>
+                <li><a href='https://blog.vhxubo.com/tags/hugo'>hugo</a></li>
+                
+                <li><a href='https://blog.vhxubo.com/tags/maupassant'>maupassant</a></li>
+                
+                <li><a href='https://blog.vhxubo.com/tags/%E4%B8%BB%E9%A2%98'>主题</a></li>
                 
             </ul>
             

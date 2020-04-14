@@ -6,10 +6,19 @@
     <description>Recent content in 工具 on Vhxubo&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 05 Nov 2019 16:28:42 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 14 Apr 2020 16:37:16 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.vhxubo.com/tags/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vhxubo&#39;s tools</title>
+      <link>https://blog.vhxubo.com/tools/</link>
+      <pubDate>Tue, 14 Apr 2020 16:37:16 +0800</pubDate>
+      
+      <guid>https://blog.vhxubo.com/tools/</guid>
+      <description>效率工具 Adguard https://adguard.com/</description>
+    </item>
     
     <item>
       <title>笔记/写作工具迁移之旅</title>

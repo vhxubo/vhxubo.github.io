@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>主题 on Vhxubo&#39;s blog</title>
+    <link>https://blog.vhxubo.com/tags/%E4%B8%BB%E9%A2%98/</link>
+    <description>Recent content in 主题 on Vhxubo&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 14 Apr 2020 15:00:41 +0800</lastBuildDate>
+    
+	<atom:link href="https://blog.vhxubo.com/tags/%E4%B8%BB%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Maupassant 主题优化</title>
+      <link>https://blog.vhxubo.com/2020/04/14/maupassant-optimize/</link>
+      <pubDate>Tue, 14 Apr 2020 15:00:41 +0800</pubDate>
+      
+      <guid>https://blog.vhxubo.com/2020/04/14/maupassant-optimize/</guid>
+      <description>maupassant 是我最喜欢的一个主题，以下记录了对本博客主题的优化。 目录显示 在 themes/maupassant/static/css 目录下新建 custom_style.css 文件，填入以下内容，效果如左侧所示。 该版本可以自适应最长的标题，最宽为 300px = 放 17 个汉字 P.S. 请将鼠标移动到目录上测试 .post-toc { overflow: hidden; /*隐藏溢出元素*/ width: unset !important; /*清除原始宽度*/ max-width: 50px; /*最初最大宽度*/ transition: all 0.3s cubic-bezier(0.5, 1, 0.89, 1);</description>
+    </item>
+    
+  </channel>
+</rss>

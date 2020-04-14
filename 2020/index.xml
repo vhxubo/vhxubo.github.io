@@ -6,10 +6,28 @@
     <description>Recent content in 2020s on Vhxubo&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 14 Apr 2020 11:05:06 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 14 Apr 2020 15:00:41 +0800</lastBuildDate>
     
 	<atom:link href="https://blog.vhxubo.com/2020/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Maupassant 主题优化</title>
+      <link>https://blog.vhxubo.com/2020/04/14/maupassant-optimize/</link>
+      <pubDate>Tue, 14 Apr 2020 15:00:41 +0800</pubDate>
+      
+      <guid>https://blog.vhxubo.com/2020/04/14/maupassant-optimize/</guid>
+      <description>maupassant 是我最喜欢的一个主题，以下记录了对本博客主题的优化。 目录显示 在 themes/maupassant/static/css 目录下新建 custom_style.css 文件，填入以下内容，效果如左侧所示。 该版本可以自适应最长的标题，最宽为 300px = 放 17 个汉字 P.S. 请将鼠标移动到目录上测试 .post-toc { overflow: hidden; /*隐藏溢出元素*/ width: unset !important; /*清除原始宽度*/ max-width: 50px; /*最初最大宽度*/ transition: all 0.3s cubic-bezier(0.5, 1, 0.89, 1);</description>
+    </item>
+    
+    <item>
+      <title>OpenGL(Windows) 配置 - Visual Studio 2017 &#43; GLFW &#43; GLAD</title>
+      <link>https://blog.vhxubo.com/2020/04/14/opengl-configuration/</link>
+      <pubDate>Tue, 14 Apr 2020 11:47:33 +0800</pubDate>
+      
+      <guid>https://blog.vhxubo.com/2020/04/14/opengl-configuration/</guid>
+      <description>3D 图形学课程需要使用到 OpenGL ，参考已有教程配置总是遇到很多问题，毕竟部分教程已经过时了。 因此，结合我遇到的问题，写下一个条理更加清晰的新版配置流程。 先决条件 Visual Studio 2017 良好的网络环境 配置好的目录结构 - [项目名] - [项目名] - glad.c - opengl - include - glad - glad.h - GLFW - glfw3.h - glfw3native.h - KHR - khrplatform.h - lib -glfw3.lib Visual Studio 2017 配置 安装 Visual Studio 2017 时</description>
+    </item>
     
     <item>
       <title>Adguard Rules</title>

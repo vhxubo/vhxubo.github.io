@@ -6,21 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>GithubPage | Vhxubo&#39;s blog</title>
-    <meta property="og:title" content="GithubPage - Vhxubo&#39;s blog">
+    <title>搜索 | Vhxubo&#39;s blog</title>
+    <meta property="og:title" content="搜索 - Vhxubo&#39;s blog">
     <meta property="og:type" content="article">
         
         
     <meta name="Keywords" content="Vhxubo,AngUOI,Guimi,博客">
-    <meta name="description" content="GithubPage">
+    <meta name="description" content="搜索页面">
         
     <meta name="author" content="Vhxubo">
-    <meta property="og:url" content="https://blog.vhxubo.com/tags/githubpage/">
+    <meta property="og:url" content="https://blog.vhxubo.com/search/">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href='/css/normalize.css'>
     <link rel="stylesheet" href='/css/style.css'>
-    <link rel="alternate" type="application/rss+xml+xml" href="https://blog.vhxubo.com/tags/githubpage/index.xml" title="Vhxubo's blog" />
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     
@@ -66,46 +65,71 @@
                 <div class="col-8" id="main">
                     
 <div class="res-cons">
-    
     <h3 class="archive-title">
-        包含标签
-        <span class="keyword">GithubPage</span>
-        的文章
+        搜索
+        <span class="keyword">哈哈</span>
+        的结果
     </h3>
-    
 
-    
     <article class="post">
         <header>
             <h1 class="post-title">
-                <a href="https://blog.vhxubo.com/2019/11/05/githubpage-domain-setting/">Hugo &#43; GithubPage 自定义域名并支持 HTTPS</a>
+                <a href="链接">标题</a>
             </h1>
         </header>
         <date class="post-meta meta-date">
-            2019年11月5日
+            2019年12月01日
         </date>
-        
-        <div class="post-meta meta-category">
-            |
-            
-            <a href='https://blog.vhxubo.com/categories/%E5%BC%80%E5%8F%91%E8%80%85%E6%89%8B%E5%86%8C'>开发者手册</a>
-            
-        </div>
-        
         <div class="post-content">
-            因为 WordPress 的 maupassant 主题没有 Hugo 上的好看，而且基本不用 WordPress，以及学生机访问较慢，所以决定将 blog.zxbzn.com 设置为 anguoi.github.io 的 Custom domain，白嫖 Github。 根据网上已有文章，新增 A 记录设置 Custom domain 后，发现 GithubPage 有如下提示: Your site&rsquo;s DNS settings are using a custom subdomain, blog.zxbzn.com, that&rsquo;s set up as an A record. We recommend you change this to a CNAME record pointing at [YOUR USERNAME].github.io. For more information, see https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/. 大概意思是: 不……
-            <p class="readmore"><a href="https://blog.vhxubo.com/2019/11/05/githubpage-domain-setting/">阅读全文</a></p>
+            概要……
+            <p class="readmore"><a href="链接">阅读全文</a></p>
         </div>
     </article>
-    
-
-    
-
-
-
-
 
 </div>
+
+<script type="text/javascript">
+
+    var getUrlParameter = function getUrlParameter(sParam) {
+        var sPageURL = window.location.search.substring(1),
+            sURLVariables = sPageURL.split('&'),
+            sParameterName,
+            i;
+
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split('=');
+
+            if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+            }
+        }
+    };
+
+    $(document).ready(function () {
+        var q = getUrlParameter("q");
+        $("span.keyword").text(q);
+        $("article.post").remove();
+        $.ajax({
+            url: 'https:\/\/blog.vhxubo.com\/index.xml',
+            dataType: "xml",
+            success: function (data) {
+                $(data).find("item").each(function () {
+                    var item = $(this);
+                    var title = item.find("title").text();
+                    if (title.toLowerCase().indexOf(q.toLowerCase()) >= 0) {
+                        var url = item.find("link").text();
+                        var searchItem = `<article class="post"><header><h1 class="post-title"><a href="` + url + `">` + title + `</a></h1></header>`;
+                        var pubDate = new Date(item.find("pubDate").text())
+                        searchItem += `<date class="post-meta meta-date">` + pubDate.getFullYear() + `年` + (pubDate.getMonth() + 1) + `月` + pubDate.getDate() + `日</date>`;
+                        searchItem += `<div class="post-content">` + item.find("description").text() + `……<p class="readmore"><a href="` + url + `">阅读全文</a></p></div></article>`;
+
+                        $("div.res-cons").append(searchItem);
+                    }
+                });
+            }
+        });
+    });
+</script>
 
                 </div>
 
@@ -184,6 +208,17 @@
     </div>
 </footer>
 
+
+    
+    <script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 
 <a id="rocket" href="#top"></a>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Vhxubo&#39;s blog</title>
-    <link>https://blog.vhxubo.com/</link>
-    <description>Recent content on Vhxubo&#39;s blog</description>
+    <title>2019s on Vhxubo&#39;s blog</title>
+    <link>https://blog.vhxubo.com/2019/</link>
+    <description>Recent content in 2019s on Vhxubo&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 03 Nov 2019 12:50:24 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 05 Nov 2019 21:16:48 +0800</lastBuildDate>
     
-	<atom:link href="https://blog.vhxubo.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.vhxubo.com/2019/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -27,33 +27,6 @@
       
       <guid>https://blog.vhxubo.com/2019/11/05/note-tools-line/</guid>
       <description>目前使用电脑 Typora，手机 纯纯写作，博客 Hugo WordPress，网页 Notion 最开始的时候，在本地使用 Typora 记录笔记，将文章分类后推到 Github 仓库。这种方法虽然对文章进行了网络备份，但是无法搜索和索引，感觉使用起来不方便。 后来了解到 Hexo + GithubPage，不得不说，释出后的静态页面挺好，主题和</description>
-    </item>
-    
-    <item>
-      <title>关于</title>
-      <link>https://blog.vhxubo.com/about/</link>
-      <pubDate>Sun, 03 Nov 2019 12:50:24 +0800</pubDate>
-      
-      <guid>https://blog.vhxubo.com/about/</guid>
-      <description>在这里记录我的所有碎碎念。</description>
-    </item>
-    
-    <item>
-      <title>归档</title>
-      <link>https://blog.vhxubo.com/archives/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.vhxubo.com/archives/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>搜索</title>
-      <link>https://blog.vhxubo.com/search/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.vhxubo.com/search/</guid>
-      <description></description>
     </item>
     
   </channel>

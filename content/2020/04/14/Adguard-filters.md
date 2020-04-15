@@ -1,8 +1,8 @@
 ---
-title: "Adguard Rules"
+title: "AdGuard Filters"
 date: 2020-04-14T11:05:06+08:00
 type: post
-tags: ["Adguard"]
+tags: ["AdGuard"]
 categories: ["工具"]
 toc: true
 ---

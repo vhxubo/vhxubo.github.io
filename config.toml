@@ -14,7 +14,7 @@ enableEmoji = true
 [params]
   author = "Vhxubo"
   subtitle = "专注摸鱼、踩坑，热衷于学习并开发各种插件"
-  keywords = "Vhxubo,AngUOI,Guimi,博客"
+  keywords = "Vhxubo,AngUOI,Guimi,博客,Hugo,工具"
   description = "记录有用的知识"
   busuanzi = true
   localSearch = true

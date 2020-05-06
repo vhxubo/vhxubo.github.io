@@ -9,6 +9,8 @@ toc: true
 
 `xxy-web` 将学小易 web 化，方便已注册用户搜题（需要先在学小易 APP 注册账号）。
 
+[开源地址](https://github.com/vhxubo/xxy-web)
+
 ## 解决跨域问题
 
 ### dev 环境
